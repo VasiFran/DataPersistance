@@ -1,6 +1,6 @@
-package com.example.exercise1.network
+package com.example.exercise1.data
 
-import com.example.exercise1.data.Joke
+import com.example.exercise1.domain.models.Joke
 import retrofit2.http.GET
 import retrofit2.http.Path
 

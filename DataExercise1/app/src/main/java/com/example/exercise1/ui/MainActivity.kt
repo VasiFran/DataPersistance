@@ -6,19 +6,19 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
 import androidx.core.widget.addTextChangedListener
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.exercise1.R
 import com.example.exercise1.databinding.ActivityMainBinding
-
-
-
 
 class MainActivity : ComponentActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: JokeAdapter
 
-    private val viewModel: JokeViewModel by viewModels()
+    private val viewModel: JokeViewModel by viewModels(){
+        JokeViewModelFactory()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

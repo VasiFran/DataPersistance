@@ -3,7 +3,7 @@ package com.example.exercise1.ui
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.exercise1.data.Joke
+import com.example.exercise1.domain.models.Joke
 import com.example.exercise1.databinding.ListJokesBinding
 
 class JokeAdapter(val joke: MutableList<Joke> = mutableListOf()) : RecyclerView.Adapter<JokeAdapter.ViewHolder>() {
