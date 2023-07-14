@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="WelcomeText">Welcome back</string>
+    <string name="EditTextHint">Username</string>
+</resources>
